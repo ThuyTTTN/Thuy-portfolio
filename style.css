@@ -1,9 +1,64 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
 body {
-    background: #f4f9f9;
-    color: #5f6565;
+    background: #fefefe;
+    color: #515555;
     font-family:'Times New Roman', Times, serif;
 }
 a {
-    color:#5f6565;
+    color:#515555;
     text-decoration: none;
 }
+
+header {
+    padding: 50px;
+    height: 600px;
+    background-image:url("/images/watercolor-eucalyptus.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+    margin: 0;
+    font-size: 36px; 
+    color:#515555;   
+}
+
+header a {
+    text-decoration: none;
+    color:#515555;
+}
+
+header nav{
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: #f3dde2;
+    color: #515555;
+    border-radius: 5px;
+    text-shadow: none;
+}
+
