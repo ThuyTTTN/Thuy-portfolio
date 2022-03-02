@@ -8,7 +8,7 @@
 
     <body>
         <header>
-            <h1><a href="/">Thuy Nguyen</a></h1>
+            <h1><a href="/"><img src="./images/Thuy-name.png" alt="Thuy Nguyen"/></a></h1>
             <!-- navigation -->
             <nav>
                 <ul>
@@ -29,26 +29,84 @@
         </header>
 
         
+        <!-- Div sections -->
+    <section id="about">
+        <div class="about">
+            <h2>About Me</h2>
+            <div class="about-info">
+                <div class="about-image">
+                    <img src="./images/Thuy-img.JPG" alt="image placeholder" width="145" height="210">
+                </div>
+                <div class="about-text">
+                    <p>Hi, I'm Thuy! I'm a current student at the University of Central Florida (UCF) coding bootcamp, and look forward to working with you in the near future. I am an alumni of UCF.  Go Knights!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Article sections -->
-        <article id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus aliquid beatae dignissimos a error saepe obcaecati nesciunt, corrupti alias accusamus quibusdam incidunt nam molestiae ut? Ipsam dignissimos nihil corporis!</p>
-        </article>
-
-        <article id="work">
+    <section id="work">
+        <div class="work">
             <h2>Work</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet ratione culpa dolore assumenda magnam quisquam aliquam sequi officia tenetur modi rerum non alias error, esse commodi minima eaque voluptatem provident?</p>
-        </article>
-        
-        <article id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere adipisci eos cupiditate asperiores repellat, eaque magnam delectus numquam iusto aperiam ab tempore reiciendis? Quia sunt, eum tenetur ad et quaerat.</p>
-        </article>
+            <div class="work-info">
+                <div class="work-text">
+                    <p>Future work to be displayed</p>
+                </div>
+                <div class="work-image">
+                    <div class="img-grow">
+                    <img src="./images/euca-1.jpg" alt="image placeholder" width="200" height="200" />
+                    </div>
+                    <div class="img-grow">
+                    <img src="./images/euca-1.jpg" alt="image placeholder" width="200" height="200" />
+                    </div>
+                    <div class="img-grow">
+                    <img src="./images/euca-1.jpg" alt="image placeholder" width="200" height="200" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Let's Connect!</h2>
+                <p>Feel free to reach out to me if you're interested in working together.  <br />You can also email me at <a href="ttruong06@gmail.com">ttruong06@gmail.com</a>.</p>
+                <br/>
+                <div class="contact-form">
+                    <form>
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+                        
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="Your Email" />
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+                          
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+        </div>
+    </section>
 
         <!-- footer -->
         <footer>
             <h3>Made by Thuy Nguyen</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>

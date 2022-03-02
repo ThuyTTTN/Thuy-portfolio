@@ -1,9 +1,11 @@
 
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
 
 body {
     background: #fefefe;
@@ -21,33 +23,35 @@ a:hover {
 
 header {
     padding: 20px;
-    height: 600px;
+    height: 500px;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image:url("/images/watercolor-eucalyptus.jpg");
+    background-image:url("./images/watercolor-eucalyptus-leaf-bg1.png");
     background-size:contain;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    top: 0;
+    background-size: 1000px 600px; 
+    margin: 0;
 }
 
 header h1 {
-    margin: 0;
-    margin: 0;
-    font-size: 40px; 
     color:#515555;   
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -100px;
 }
 
 header a {
     text-decoration: none;
-    color:#515555;
+    color:#444747;
 }
 
 header nav{
-    margin: 7px 0;
+    margin: 50px 0;
 }
 
 header nav ul {
@@ -62,6 +66,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-size: 1.55vw;
+    font-weight: normal;
 }
 
 header nav ul li a:hover {
@@ -71,3 +76,175 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* About section */
+.about {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: #cad1d1 1px solid;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.about-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2 70%;
+}
+
+.about-image {
+    flex: 1 12%;
+    margin-right: 100px;
+    margin: 50px;
+}
+
+.about-text {
+    flex: 12;
+}
+.about-text p {
+    color: #515555;
+    font-size: 1.55vw;
+}
+
+/* Work Section */
+.work {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: #cad1d1 1px solid;
+}
+
+.work h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.work p {
+    text-align: center;
+}
+
+.work-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 12%;
+    margin-right: 15px;    
+}
+.img-grow {
+    border: solid 1.5px #507060;
+    border-radius: 5px;
+
+}
+.img-grow:hover {
+    transform: scale(1.2);
+}
+
+
+.work-text p {
+    color: #515555;
+    font-size: 1.55vw;
+    margin-bottom: 15px;
+}
+
+
+/* Contact section */
+.contact {
+    background-color: #fefefe;
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.contact h2{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.contact p{
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #515555;
+    display: block;
+    padding: 7px 15px;
+    font-size: 1.55vw;
+    color: #515555;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #eef7f7;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: #d9ece5;
+    outline: none;
+}
+
+.contact-form button {
+    width: 10%;
+    border: none;
+    background: #eef7f7;
+    color: #515555;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.55vw;
+    border-radius: 5px;
+    
+}
+
+.contact-form button:hover {
+    color: #515555;
+    background: #f3dde2;
+}
+
+/* footer */ 
+footer {
+    background: #77a58e;
+    width: 100;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h3{
+    color: #515555;
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+footer nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+    font-weight: none;
+}
+
+footer nav ul li a:hover {
+    background: #f3dde2;
+    color: #515555;
+    border-radius: 5px;
+    text-shadow: none;
+}
