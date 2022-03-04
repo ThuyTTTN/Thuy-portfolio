@@ -13,7 +13,7 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a {
-    color:#515555;
+    color:#3e4141;
     text-decoration: none;
 }
 
@@ -139,15 +139,26 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    flex: 1 12%;
     margin-right: 15px;    
 }
+
+
 .img-grow {
     border: solid 1.5px #507060;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    padding: 20px;
+    margin-left: 50px;
 }
+.one {
+    flex: 2 1 0;
+    text-align: center;
+}
+
+.two .three {
+    flex: 1 1 0;
+}
+
 .img-grow:hover {
     transform: scale(1.2);
     
