@@ -12,20 +12,18 @@ body {
     color: #515555;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 a {
     color:#3e4141;
     text-decoration: none;
 }
 
-a:hover {
-    color: #507060;
-}
-
 header {
-    height: 600px;
+    height: 100vw;
+    width: 100vw;
+    background-size: cover;
     padding: 30px 35px;
     background-image:url("../images/watercolor-eucalyptus-leaf-bg.png");
-    background-size: 1100px 600px, cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -33,7 +31,6 @@ header {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
- 
 }
 
 header h1 {
@@ -42,6 +39,7 @@ header h1 {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-top:-500px;
 }
 
 header h1 img {
@@ -84,6 +82,9 @@ header nav ul li a:hover {
 
 .section-title {
     margin-bottom: 15px;
+    background-color: #d9ece5;
+    margin: 15px auto;
+    padding: 15px;
     text-align: center;
     font-size: 3.0vw;
     font-weight: normal;
@@ -111,6 +112,15 @@ header nav ul li a:hover {
     flex: 1 12%;
     margin-right: 100px;
     margin: 50px;
+}
+
+.about-image img {
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-image:hover {
+    transform: scale(1.2);
 }
 
 .about-text {
@@ -146,7 +156,7 @@ header nav ul li a:hover {
 .img-grow {
     border: solid 1.5px #507060;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-left: 50px;
 }
@@ -160,8 +170,7 @@ header nav ul li a:hover {
 }
 
 .img-grow:hover {
-    transform: scale(1.2);
-    
+    transform: scale(1.2); 
 }
 
 .work-text p {
@@ -228,7 +237,7 @@ footer {
 }
 
 footer h3 {
-    color: #515555;
+    color: #444747;
     font-size: 20px;
     margin: 0;
     font-weight: normal;
@@ -260,23 +269,23 @@ footer nav ul li a:hover {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
-        /* padding-bottom: 0; */
-        background-position: top;
-        justify-content: center;
-        position: relative;
+        background-size:100vw;
+        background-color: #77a58e;
     }
-    header img {
-        margin-top: 125px;
+    
+    header h1 img {
+        background-position: 80%;
+        margin-top: 750px;
+        margin-left: 300px;
     }
 
     header h1 {
         width: 100%;
-        text-align: center;
-        margin-left: 60px;
     }
+    
     header nav ul {
-        margin-top: -70px;
-        margin-right: 70px;
+        margin-top: -150px;
+        margin-left: 175px;
         width: 100%;
     }
 
@@ -284,18 +293,33 @@ footer nav ul li a:hover {
         font-size: 20px;
     }
 
+    .work-image {
+        flex: 0 100%;
+    }
+
+    .one {
+        flex-basis: auto;
+        margin: 30px;
+    }
+    .two, .three {
+        flex-basis: 75%;
+        margin: 30px;
+    }
+
+    .two img, .three img {
+        margin-left:200px;
+    }
+
     footer {
         align-content: flex-end;
         justify-content: center;
-        height:200px;
-        
-        
+        height:200px;        
     }
+
     footer h3 {
         text-align: center;
         width: 100%;  
         margin-bottom: 30px;
-        
     }
 
     footer nav ul {
@@ -306,23 +330,57 @@ footer nav ul li a:hover {
  
  /* MEDIA QUERY FOR TABLETS AND SMALLER */
  @media screen and (max-width: 768px) {
-     
+    header {
+        margin: 0;
+        background-position-y: 20%;
+        height:700px;
+    }
 
+    header h1 img {
+        max-width: 60%;
+        height: auto;
+        margin-top: 680px;
+        margin-left: 250px;
+    }
+
+    header nav ul {
+        margin-top: -120px;
+        margin-left: 150px;
+        width: 80%;
+    }
+
+    .work-image .one {
+        flex-basis: auto;
+        margin: 30px;
+    }
+    .work-image .two, .work-image .three {
+        flex-basis: 65%;
+        margin: 30px;
+    }
+
+    .two img, .three img {
+        margin-left:100px;
+    }
  }
  
  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
  @media screen and (max-width: 575px) {
-   .about {
-       width: 95%;
+   header {
+       height: 500px;
+       background-position-x: 0;
+       background-position-y: 10%
    }
 
-   .work {
-       width: 95%;
-   }
+   header h1 img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 630px;
+    margin-left: 150px;
+}
 
-   .contact {
-       width: 95%;
-   }
-
-   }
+    header nav ul {
+        margin-top: -90px;
+        margin-left: 90px;
+        width: 80%;
+    }
  }
