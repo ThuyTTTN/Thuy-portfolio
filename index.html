@@ -1,117 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Thuy Nguyen Portfolio</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Thuy Nguyen Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-    <body>
-        <header>
-            <h1><a href="file:///C:/Users/ttruo/Desktop/projects/Thuy-portfolio/index.html"><img src="./images/Thuy-name.png" alt="Thuy Nguyen cursive name"/></a></h1>
-            <!-- navigation -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+        <h1>Thuy Nguyen</h1>
+        <!-- navigation -->
+        <div class="container">
+        <nav id="nav-bar">  
+        <ul>
+          <li><a href="#home" >Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
 
-        
-        <!-- Div sections -->
+    <!-- Div sections -->
     <section id="about">
-        <div class="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-info">
-                <div class="about-image">
-                    <img src="./images/Thuy-img.JPG" alt="image of Thuy with red dress" width="145" height="210">
-                </div>
-                <div class="about-text">
-                    <p>Hi, I'm Thuy! I'm an alumni of University of Central Florida. I recently joined the UCF coding bootcamp to be a software engineer, and look forward to working with you in the near future. In my free time, I enjoy spending time with my family, going to the beach, fishing, biking, and traveling.</p>
-                </div>
-            </div>
+      <div class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-info">
+          <div class="about-image">
+            <img
+              src="./images/Thuy-img.JPG"
+              alt="image of Thuy with red dress"
+              width="145"
+              height="210"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Hi, I'm Thuy! I'm an alumni of University of Central Florida. I
+              recently joined the UCF coding bootcamp to be a software engineer,
+              and look forward to working with you in the near future. In my
+              free time, I enjoy spending time with my family, going to the
+              beach, fishing, biking, and traveling.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="work">
-        <div class="work">
-            <h2 class="section-title">Work</h2>
-            <div class="work-info">
-                <div class="work-text">
-                    <p> Click on the images below to see the projects.
-                    </p>
-                </div>
-                <div class="work-image">
-                    <div class="img-grow one">
-                    <a href="https://thuytttn.github.io/run-buddy/"><img src="./images/euca-1.jpg" alt="watercolor green eucalyptus leaves" width="200" height="200" />
-                    <p>Project 1: <br/>Run Buddy</p></a>
-                    </div>
-                    <div class="img-grow two">
-                    <a href="https://thuytttn.github.io/horiseon/"><img src="./images/euca-1.jpg" alt="watercolor green eucalyptus leaves" width="150" height="150" />
-                    <p>Project 2: <br /> Horiseon</p></a>
-                    </div>
-                    <div class="img-grow three">
-                    <a href="https://thuytttn.github.io/Florida-s-hungry/"><img src="./images/euca-1.jpg" alt="watercolor eucalyptus leaves" width="150" height="150" />
-                    <p>Project 3: <br />Florida's Hungry</p></a>
-                    </div>
-                </div>
-            </div>
+      <div class="work">
+        <h2 class="section-title">Work</h2>
+        <div class="work-info">
+          <div class="work-text">
+            <p>Click on the images below to see the projects.</p>
+          </div>
+          <ul id="hexGrid">
+            <li class="hex">
+              <div class="hexIn">
+                <a href="https://sweet-nostalgia.herokuapp.com/" class="hexLink" href="#">
+                  <img
+                    src="/images/sweet-nostalgia-screenshot.jpg"
+                    alt=""
+                  />
+                  <h1>Project: Sweet Nostalgia</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a a href="https://thuytttn.github.io/Florida-s-hungry/" class="hexLink" href="#">
+                  <img
+                    src="/images/floridas-hungry-screenshot.jpg"
+                    alt=""
+                  />
+                  <h1>Project: Florida's Hungry</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a href="https://thuytttn.github.io/run-buddy/"class="hexLink" href="#">
+                    <img
+                    src="/images/run-buddy-screenshot.jpg"
+                    alt=""
+                  />
+                  <h1>Project: Run Buddy</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="work-image">
+            <div class="img-grow one">
+              <a href="https://sweet-nostalgia.herokuapp.com/"
+                ><img
+                  src="./images/euca-1.jpg"
+                  alt="watercolor green eucalyptus leaves"
+                  width="200"
+                  height="200"
+                />
+                <p>Project: <br />Sweet Nostalgia</p></a
+              >
+            </div> -->
+          <!-- <div class="work-image">
+            <div class="img-grow one">
+              <a href="https://thuytttn.github.io/run-buddy/"
+                ><img
+                  src="./images/euca-1.jpg"
+                  alt="watercolor green eucalyptus leaves"
+                  width="200"
+                  height="200"
+                />
+                <p>Project: <br />Run Buddy</p></a
+              >
+            </div> -->
+            <!-- <div class="img-grow three">
+              <a href="https://thuytttn.github.io/Florida-s-hungry/"
+                ><img
+                  src="./images/euca-1.jpg"
+                  alt="watercolor eucalyptus leaves"
+                  width="150"
+                  height="150"
+                />
+                <p>Project: <br />Florida's Hungry</p></a
+              >
+            </div> -->
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div class="contact">
-            <h2 class="section-title">Let's Connect!</h2>
-                <p>Feel free to reach out to me if you're interested in working together.  <br />You can also email me at <a href="ttruong06@gmail.com">ttruong06@gmail.com</a>.</p>
-                <br/>
-                <div class="contact-form">
-                    <form>
-                        <label for="contact-name">Name</label>
-                        <input type="text" id="contact-name" placeholder="Your Name" />
-                        
-                        <label for="contact-email">Email</label>
-                        <input type="email" id="contact-email" placeholder="Your Email" />
+      <div class="contact">
+        <h2 class="section-title">Let's Connect!</h2>
+        <p>
+          Feel free to reach out to me if you're interested in working together.
+          <br />You can also email me at
+          <a href="ttruong06@gmail.com">ttruong06@gmail.com</a>.
+        </p>
+        <br />
+        <div class="contact-form">
+          <form>
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
 
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" placeholder="Message"></textarea>
-                          
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="Your Email" />
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
 
-        <!-- footer -->
-        <footer>
-            <h3>Made by Thuy Nguyen</h3>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+    <!-- footer -->
+    <footer>
+      <h3>Made by Thuy Nguyen</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
