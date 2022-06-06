@@ -37,17 +37,19 @@ ul {
 
 #nav-bar {
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 0;
   width: 100%;
   /* color: #000; */
-  /* background-color: rgba(0, 128, 128, 1); */
+  background-color: #e5ded2;
   /* text-decoration: none; */
   /* border: 1px solid #000; */
   padding: 1em;
   /* margin: 1%;
     transition: color .5s;
     overflow: hidden; */
+    z-index: 10;
+
 }
 
 #box {
@@ -68,14 +70,14 @@ ul {
     z-index: -1;
     transform: translateX(-100%) skewX(-45deg);
     transition: transform .5s;
-}
+} */
 
 #box:hover {
  color: #fff;
- background-color: #000;
+ background-color: #2c2c2c;
 }
 
-#box:hover:before {
+/* #box:hover:before {
     transform: translateX(0) skewX(-45deg)
 } */
 
@@ -87,6 +89,7 @@ ul {
 
 #work {
   padding: 50px;
+  margin-bottom: 50px;
 }
 
 #work h2 {
@@ -106,6 +109,8 @@ ul {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   list-style-type: none;
+  
+
 }
 
 .hex {
@@ -273,6 +278,7 @@ footer ul {
   text-align: center;
   padding-top: 10px;
 }
+
 footer li {
   display: inline-block;
   padding-right: 30px;
@@ -282,7 +288,13 @@ footer a {
   text-decoration: none;
   font-size: 1em;
   color: #000;
+  
 }
+
+/* footer a:hover {
+background-color: #000;
+color: #fff;
+} */
 
 /* HEXAGON SIZING AND EVEN ROW INDENTATION */
 @media (min-width: 1201px) {
